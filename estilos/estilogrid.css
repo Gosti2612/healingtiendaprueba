@@ -1,0 +1,297 @@
+*{
+    margin:0;
+    padding:0;
+
+}
+
+body{
+    background-color: background-color; #d3d3d3;
+    background-image: linear-gradient(315deg, #d3d3d3 0%, #eccc68 74%); 
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: auto;
+     margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logoHeader{
+    font-family:'Oleo Script Swash Caps', cursive;
+    font-size: 50px;
+    padding-left: 40px;
+}
+
+.contenedorNav {
+    width: 60%;
+}
+
+.menuNav
+{
+    font-family: 'Poppins', sans-serif;
+    margin: auto;
+    padding:auto;
+    list-style:none;
+    text-align: center;
+    width: 80%;
+}
+
+.itemNav {
+    list-style: none;
+    padding: 4px;
+    font-size: 1 rem;
+    display: inline-block;
+}
+
+.itemNav :hover{
+    transform:scale(1.5, 1.5);
+    color:chocolate;
+    background-color:background-color; #f9ea8f;
+    background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+    border-radius: 100%;
+
+}
+
+.footer1 {
+    border-top:solid 5px black;
+    border-right: solid 5px black;
+    border-bottom: solid 5px black;
+    border-left: solid 5 px black;
+    font-size: 1rem;
+    font-family: 'Oleo Script Swash Caps', cursive; font-family: 'Poppins', sans-serif;
+    padding: 1rem;
+    padding-left: 1rem;
+    text-align: center;
+    list-style: none;
+    margin-top: 2rem;
+
+}
+
+/*GRID INDEX DESKTOP*/
+.contenedorIndex {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 80px 450px 400px;
+}
+
+.encabezado{
+    grid-column: 3/12;
+    grid-row: 1;
+    padding-left: 2rem;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+}
+
+.textoIndex1 {
+    grid-column: 4/9;
+    grid-row: 3/4;
+    padding-left: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    font-size: 1.4rem;
+    padding-top: 3rem;
+    padding-right: 20px;
+}
+
+.imagenIndex {
+    grid-column: 5/7;
+    grid-row: 2/3;
+    padding-top: 3rem;
+    text-align: center;
+}
+
+
+/* GRIDS QUIENES SOMOS DESKTOP*/
+
+.contenedorQuienesSomos {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 200px 1fr 1fr;
+}
+
+.tituloQuienesSomos {
+    grid-column: 3/5;
+    grid-row: 1;
+    padding-left: 15px;
+    padding-top: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+
+.imagenQuienesSomos1 {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.textoImagen1 {
+    grid-column: 4/6;
+    grid-row: 2/3;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.imagenQuienesSomos2 {
+    grid-column: 2/4;
+    grid-row: 3/4;
+    padding-top: 2rem;
+}
+
+.textoImagen2 {
+    grid-column: 4/6;
+    grid-row: 3/4;
+    font-family: 'Poppins', sans-serif; 
+    font-size: 1.8rem;
+    text-align: center;
+    padding-top: 2rem;
+    
+}
+
+/* GRIDS MOBILE INDEX*/
+
+@media all and (max-width: 768px) {
+    .contenedorIndex{
+        display: grid;
+        grid-template-columns: 
+        grid-template-rows: 80px 400px 400px;
+    
+    }
+    .encabezado {
+        grid-row: 1/2;
+        font-size: 1.4rem;
+        padding-bottom: -3rem;
+    }
+
+    .imagenIndex {
+margin-bottom: 2rem;
+align-items: center;
+grid-column: 4/6;
+    }
+    
+    .textoIndex1 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    }
+
+@media all and (max-width: 627px) {
+    .contenedorIndex{
+        display: grid;
+        grid-template-columns: 
+        grid-template-rows: 60px 200px 020px;
+    
+    }
+    .encabezado {
+        grid-row: 1/2;
+        font-size: 1.4rem;
+        padding-bottom: -3rem;
+    }
+
+    .imagenIndex {
+        margin-bottom: 1rem;
+        align-items: center;
+        grid-column: 3/5;
+        height: 280px;
+        margin-top: 40px;  
+        margin-left: 25px;  }
+    
+    .textoIndex1 {
+        font-size: 0.8rem;
+        margin-bottom: 2rem;
+    }
+}
+
+@media all and (max-width: 1100px min-width:628px) {
+    .textoIndex1 {
+        font-size: 1.2rem;
+        margin-bottom: 2rem;
+        padding-bottom: 15px;
+    }
+
+}
+
+/* GRIDS MOBILE QUIENES_SOMOS*/
+
+@media all and (max-width: 770px) {
+    .contenedorQuienesSomos{
+        display: grid;
+        grid-template-columns: 
+        grid-template-rows: 80px 400px 400px;
+    
+    }
+    .tituloQuienesSomos {
+        grid-row: 1/2;
+        font-size: 1.4rem;
+        padding-bottom: -3rem;
+        grid-column: 2;
+    }
+
+    .imagenQuienesSomos1 {
+        margin-bottom: 2rem;
+        align-items: center;
+        grid-column: 2/4;
+    }
+    
+    .textoImagen1 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+    .imagenQuienesSomos2 {
+        margin-bottom: 2rem;
+        align-items: center;
+        grid-column: 2/4;
+            }
+    .textoImagen2 {
+        font-size: 1rem;
+        margin-bottom: 2rem;
+    }
+
+    }
+
+    @media all and (max-width: 697px) {
+        .contenedorQuienesSomos{
+            display: grid;
+            grid-template-columns: 
+            grid-template-rows: 60px 200px 200px;
+        
+        }
+        .tituloQuienesSomos {
+            grid-row: 1/2;
+            font-size: 1.4rem;
+            padding-bottom: -3rem;
+            grid-column: 2/3;
+        }
+    
+        .imagenQuienesSomos1 {
+            margin-bottom: 2rem;
+            align-items: center;
+            grid-column: 2/3;
+            height: 200px;
+        }
+        
+        .textoImagen1 {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+        .imagenQuienesSomos2 {
+            margin-bottom: 2rem;
+            align-items: center;
+            grid-column: 2/3;
+            height: 200px;
+                }
+        .textoImagen2 {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+        }
+    
+        }
+    
